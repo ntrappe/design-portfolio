@@ -1,0 +1,22 @@
+# Run linter (currently just HTML) on
+# (1) push to development branches (not main/g-h pages)
+on:
+  push:
+    branches-ignore:
+      - main
+      - gh-pages
+
+# (2) triggered manually on Actions on Github
+  workflow_dispatch:
+
+# Under name "Lint Code Base Job" we will run:
+jobs:
+  run-tests:
+    name: Lint Code Base Job
+    runs-on: ubuntu-latest
+
+    steps:
+    # (1) HTML validator
+      - name: HTML5 Validator
+        uses: Cyb3r-Jak3/html5validator-action@v7.0.0
+    # (2) TBD: css linter
