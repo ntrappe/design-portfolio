@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "lint_test":  "eslint \"source/**/*.js\" \"testing/**/*.js\" && stylelint \"source/**/*.css\" && htmlhint \"source/**/*.html\"",
-        "lint_fix": "eslint --fix \"source/**/*.js\" \"testing/**/*.js\" && stylelint --fix \"source/**/*.css\" && htmlhint \"source/**/*.html\""
+        "lint_test":  "htmlhint \"source/*.html\"",
+        "lint_fix": "htmlhint \"source/*.html\""
     },
     "devDependencies": {
         "eslint": "^7.21.0",
