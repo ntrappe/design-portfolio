@@ -17,10 +17,9 @@ jobs:
 
     steps:
     # (1) HTML validator
+      - uses: actions/checkout@v2
       - name: HTML5 Validator
-        uses: Cyb3r-Jak3/html5validator-action@v7.0.0
+        uses: Cyb3r-Jak3/html5validator-action
         with:
           root: source/
-      - name: Print the input name to STDOUT
-        run: echo The username is ${{ inputs.username }}
     # (2) TBD: css linter
