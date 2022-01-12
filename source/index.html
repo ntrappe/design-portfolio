@@ -14,6 +14,20 @@
             <!-- see if github actions will NOT catch this error -->
             <p>hi there</p>
         </main>
-        <footer></footer>
+        <script>
+            fetch('https://extreme-ip-lookup.com/json/')
+                .then( res => res.json())
+                .then(response => {
+                    console.log("Country: ", response.country);
+                    console.log("City: ", response.city);
+                    console.log("Timezone: ", response.timezone);
+            })
+            .catch((data, status) => {
+                console.log('Request failed');
+            })
+        </script>
+        <footer>
+            Nicole Trappe 2022
+        </footer>
     </body>
 </html>
