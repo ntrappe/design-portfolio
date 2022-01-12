@@ -1,0 +1,30 @@
+# Run linter (currently just HTML) on
+# (1) push to development branches (not main/g-h pages)
+on:
+  push:
+    branches-ignore:
+      - main
+      - gh-pages
+
+# (2) triggered manually on Actions on Github
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    name: Lint Code Base
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run HTML linter
+        run: |
+              npm i
+              npm run lint_test
+      
