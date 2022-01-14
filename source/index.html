@@ -14,16 +14,16 @@
             <!-- see if github actions will NOT catch this error -->
             <p>hi there</p>
             <script>
-                fetch('https://extreme-ip-lookup.com/json/')
-                    .then( res => res.json())
-                    .then(response => {
-                        console.log("Country: ", response.country);
-                        console.log("City: ", response.city);
-                        console.log("Timezone: ", response.timezone);
-                })
-                .catch((data, status) => {
-                    console.log('Request failed');
-                })
+                fetch ('http://ip-api.com/json')
+                    .then (res => res.json())
+                    .then (response => {
+                        console.log ("Country: ", response.country);
+                        console.log ("City: ", response.city);
+                        console.log ("Timezone: ", response.timezone);
+                    })
+                    .catch ((data, status) => {
+                        console.log('Request failed');
+                    })
             </script>
         </main>
         <footer>
