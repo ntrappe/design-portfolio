@@ -1,0 +1,33 @@
+* {
+    background-color: rgb(244, 244, 244);
+}
+
+main {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid green;
+}
+
+/* #color-container {
+    background-color: blue;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid wheat;
+}*/
+
+#project-container > .item {
+    border: 2px solid purple;
+}
+
+/* if on mobile, have one card per row */
+@media screen and (max-width:500px) {
+    #project-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
