@@ -40,7 +40,7 @@
             </nav>
         </header>
         <div id="link-col" class="content-col" orientation="left">
-            <ul id="link-col-items">
+            <ul id="link-col-items" class="gutters">
                 <li>GitHub</li>
                 <li>LinkedIn</li>
                 <li>Medium</li>
@@ -55,7 +55,7 @@
         <main>
             <section id="title-section">
                 <h1>Hi, my name is</h1>
-                <h2>Nicole Trappe.</h2>
+                <h2>Name Goes Here.</h2>
                 <h2>I ..........</h2>
                 <h3>I'm a software engineer specializing in building .......... </h3>
             </section>
@@ -66,13 +66,66 @@
                 <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React</p>
             </section>
             <section id="work">
-                <h2>Work</h2>
+                <h2>Where I've Worked</h2>
                 <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
                 <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
                 <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React</p>
+                <div id="job-table">
+                    <div id="job-keys">
+                        <button class="job" state="on">Microsoft</button>
+                        <button class="job" state="off">IBM</button>
+                        <button class="job" state="off">OpWall</button>
+                    </div>
+                    <div id="job-results">
+                        <section class="job-description" aria-hidden="false">
+                            <h3>Software Engineer Intern</h3>
+                            <h4>June - September 2021</h4>
+                            <ul>
+                                <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
+                                <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
+                            </ul>
+                        </section>
+                        <section class="job-description" aria-hidden="true">
+                            <h3>Machine Learning Intern</h3>
+                            <h4>June - September 2019</h4>
+                        </section>
+                        <section class="job-description" aria-hidden="true">
+                            <h3>Software Engineer Intern</h3>
+                            <h4>June - September 2021</h4>
+                        </section>
+                    </div>
+                </div>
             </section>
             <section id="design">
                 <h2>Design</h2>
+                <div class="project-preview">
+                    <div class="project-content" orientation="right">
+                        <h4>Case Study 1</h4>
+                        <h3 class="project-title">Pomodoro Timer</h3>
+                        <p class="project-description">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                        <ul class="project-tools">
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="project-image" orientation="left"></div>
+                </div>
+                <div class="project-preview">
+                    <div class="project-content" orientation="left">
+                        <h4>Case Study 2</h4>
+                        <h3 class="project-title">National Park App</h3>
+                        <p class="project-description">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                        <ul class="project-tools">
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="project-image" orientation="right"></div>
+                </div>
             </section>
             <section id="contact">
                 <h2>Contact</h2>
@@ -82,7 +135,7 @@
             </section>
         </main>
         <footer>
-            Designed & Built by Nicole Trappe
+            <p>Designed & Built by Nicole Trappe</p>
         </footer>
     </body>
 </html>
