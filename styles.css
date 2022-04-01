@@ -46,6 +46,25 @@ ul::after {
     writing-mode: vertical-rl;
 }
 
+#nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav-items ol {
+    display: flex;  /* makes nav items fill a row */
+    list-style: none; /* no default numbering */
+    padding: 0px;
+}
+
+.section-btn {
+    list-style: none;
+    margin: 0px 5px;
+}
+
 nav {
     display: flex;
     position: relative;
@@ -59,7 +78,22 @@ nav {
 main {
     margin: 0px auto;
     width: 100%;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     min-height: 100vh;
-    padding: 200px 150px !important;
+    padding: 0 150px !important;
+    border: 2px solid teal;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid pink;
+    max-width: 900px;
+    padding: 100px 0px;
+}
+
+* {
+    box-sizing: inherit;
 }
