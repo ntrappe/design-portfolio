@@ -22,12 +22,27 @@ html {
     align-items: center;
 }
 
+#link-col-items {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#link-col-items li {
+    padding: 10px;
+}
+
+#link-col-items li:last-child {
+    margin-bottom: 20px;
+}
+
 .gutters::after {
     content: "";
     display: block;
     width: 1px;
     height: 90px;
     margin: 0px auto;
+    background-color: #a8b2d1;
 }
 
 #email-col {
