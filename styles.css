@@ -1,0 +1,65 @@
+html {
+    scrollbar-color: green;
+}
+
+.content-col {
+    width: 40px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 10; /* how much to the front it is */
+}
+
+#link-col {
+    border: 2px solid red;
+    left: 40px;
+    right: auto;
+}
+
+#link-col-items,
+#email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+}
+
+#email-col {
+    border: 2px solid yellowgreen;
+    right: 40px;
+    left: auto;
+}
+
+#email-container {
+    position: relative;
+}
+
+#email-container a {
+    margin: 20px auto;
+    padding: 10px;
+    writing-mode: vertical-rl;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    border: 2px solid orange;
+    z-index: 20; /* most to the front of all items */
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 200px 150px !important;
+}
