@@ -82,8 +82,10 @@ job1.innerHTML = `
     </h3>
     <p class="range">June - September 2021</p>
     <ul>
-        <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-        <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
+        <li>Implemented an ACPI translation layer to be released in the Windows kernel</li>
+        <li>Authored the design spec and project schedule with deliverables</li>
+        <li>Implemented the translation layer in C/C++ and designed the API to expose this information</li>
+        <li>Wrote a testing framework to support debugging in and out of the kernel</li>
     </ul>
 `;
 
@@ -96,8 +98,9 @@ job2.innerHTML = `
     </h3>
     <p class="range">June - September 2019</p>
     <ul>
-        <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-        <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
+        <li>Selected, implemented, and evaluated machine learning models to mimic the olfactory circuit of the fruit fly—to create an artificial nose</li>
+        <li>Wrote Python code for supervised classification models</li>
+        <li>Responsible for pre-processing gas-sensing data used to train the models and unit testing of predictions</li>
     </ul>
 `;
 
@@ -110,8 +113,9 @@ job3.innerHTML = `
     </h3>
     <p class="range">June - September 2021</p>
     <ul>
-        <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-        <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
+        <li>Focused on gathering sensor data to measure cognitive function in the elderly</li>
+        <li>Identified appropriate metrics of cognitive ability, daily habits, and interaction</li>
+        <li>Selected physical sensors & correlated subsequent measurements to cognitive decline</li>
     </ul>
 `;
 
