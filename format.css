@@ -249,7 +249,7 @@ div.project-preview {
     align-items: center;
     grid-template-columns: repeat(12, 1fr);
     justify-content: flex-end;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 /* info part of project preview as part of grid */
