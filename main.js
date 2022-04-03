@@ -9,9 +9,32 @@ const job1 = document.createElement ('section');
 const job2 = document.createElement ('section');
 const job3 = document.createElement ('section');
 
+const linkColItems = document.getElementById ('link-col-items');
+const gitHubIcon = document.getElementById ('github-icon');
+const iconArr = document.getElementsByClassName ('icon');
+console.log (iconArr);
+console.log (iconArr[1]);
+
 function onload() {
     microsoftBtn.setAttribute ('state', 'on');
     jobResultsContainer.appendChild (job1);
+}
+
+// for each icon (img html element), when mouse hover
+// replace default image with lighter one then revert
+// to default after 1 second
+for (const icon of iconArr) {
+    const defaultSrc = icon.getAttribute ('src');
+    const lightSrc = defaultSrc.replace ('.png', '-light.png');
+    console.log (lightSrc);
+
+    icon.addEventListener ('mouseover', () => {
+        console.log ('mouse over icon');
+        icon.setAttribute ('src', lightSrc);
+        setTimeout(() => {
+            icon.setAttribute ('src', defaultSrc);
+        }, 1000);
+    });
 }
 
 microsoftBtn.addEventListener ('click', () => {
