@@ -2,8 +2,7 @@
  * The aesthetic css with only colors, fonts, etc.
  */
 
-@import "./format.css";
-@import "./configure.css";
+/* @import "./format.css"; */
 
 /*====== NAVIGATION/HEADER ======*/
 li.nav-item a {
@@ -32,7 +31,8 @@ li.nav-item a:hover,
     color: var(--slate);
 }
 
-#email-container a {
+#email-container a,
+#mobile-email-container a {
     text-decoration: none;
     line-height: 18px;
     font-family: var(--font-mono);

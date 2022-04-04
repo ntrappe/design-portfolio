@@ -3,6 +3,8 @@
  * No fonts, colors, etc.
  */
 
+@import url("./style.css");
+
 #title-section {
     display: flex;
     flex-direction: column;
@@ -338,6 +340,11 @@ div.project-content[orientation="left"] li {
 
 div.project-content[orientation="right"] li {
     margin: 0px 0px 5px 20px;    
+}
+
+#mobile-email-container,
+#mobile-social {
+    display: none;
 }
 
 nav {
