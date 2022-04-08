@@ -3,7 +3,7 @@
  * No fonts, colors, etc.
  */
 
-#title-section {
+ #title-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,29 +91,15 @@
 }
 
 /* each item is a button that navigates to a section */
-li.nav-item {
+.nav-item {
     list-style: none;
     margin: 0px 10px;
     padding-left: 5px; /* space between nav items */
 }
 
 /* for each item in nav, increment counter and use num */
-li.nav-item a::before {
+.nav-item a::before {
     content: "0" counter(item) ". ";
-}
-
-#dark-mode-btn svg,
-#light-mode-btn svg {
-    width: 20px;
-    height: auto;
-}
-
-#dark-mode-btn,
-#light-mode-btn {
-    cursor: pointer;
-    padding-left: 10px;
-    background: none;
-    border: none;
 }
 
 /*====== MAIN ======*/
@@ -141,7 +127,7 @@ li.nav-item a::before {
     position: relative;
     top: 0px;
     width: 300px;
-    height: 1px;
+    height: 1.5px;
     margin-left: 20px;
 }
 
@@ -301,12 +287,14 @@ div.project-image img {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
+    border: none;
     border-radius: var(--border-radius);
+    /* opacity: 0.4; */
 }
 
-div.project-image img:hover {
+/* div.project-image img:hover {
    opacity: 0.9;
-}
+} */
 
 /* "case study #" */
 h4.project-tag {
@@ -360,7 +348,7 @@ nav {
     z-index: 20;        /* most front of all items */
     align-items: center;
     justify-content: space-between;
-    padding: 0px 40px;
+    padding: 0px 10px;
     counter-reset: item 0;
 }
 
