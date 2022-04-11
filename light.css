@@ -258,7 +258,7 @@ p {
 }
 
 b {
-    color: var(--cobalt);
+    color: var(--bright-cobalt);
 }
 
 li {
@@ -277,7 +277,8 @@ h1, h2, h3, h4, h5, h6 {
     --midnight: #020c1b;
     --white-layer: rgba(255, 255, 255, 0.85);
     --white: #ffffff;
-    --cobalt: #2e67d3;
+    --cobalt: #3C78d9;
+    --bright-cobalt: #7694d9;
     --text: #596069;
     --background-grey: #eaeef2;
     --highlight-grey: #f5f6f8;

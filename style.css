@@ -247,7 +247,7 @@ p {
 }
 
 b {
-    color: var(--mint);
+    color: var(--bright-mint);
 }
 
 li {
@@ -268,7 +268,8 @@ h1, h2, h3, h4, h5, h6 {
     --navy: #0a192f;
     --light-navy: #112240;
     --lightest-navy: #233554;
-    --mint: #64ffda;
+    --mint: #3ec3ce;
+    --bright-mint: #85e9f2;
     --lagoon: #9cd7ef;
     --slate: #8892b0;
     --stone: #a8b2d1;
