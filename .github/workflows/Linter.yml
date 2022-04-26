@@ -3,6 +3,7 @@
 on:
   push:
     branches-ignore:
+      - main
       - gh-pages
 
 # (2) triggered manually on Actions on Github
