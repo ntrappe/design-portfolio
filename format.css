@@ -114,6 +114,7 @@ li.nav-item a::before {
     padding-left: 10px;
     background: none;
     border: none;
+    margin-top: 0px;
 }
 
 /*====== MAIN ======*/
