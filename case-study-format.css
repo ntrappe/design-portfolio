@@ -1,0 +1,129 @@
+
+
+/* === NAVIGATION === */
+#nav-items ol {
+    display: flex;      /* makes nav items fill a row */
+    list-style: none;   /* no default numbering */
+    padding: 0px;
+    cursor: pointer;
+}
+
+/* each item is a button that navigates to a section */
+li.home-item,
+li.nav-item {
+    list-style: none;
+    margin: 0px 10px;
+    padding-left: 5px; /* space between nav items */
+}
+
+/* set size of brain icon */
+#home-items {
+    cursor: pointer;
+}
+
+#home-items img  {
+    width: 50px;
+    height: auto;
+}
+
+/* set size of svg icons for nav */
+#dark-mode-btn svg,
+#light-mode-btn svg {
+    width: 20px;
+    height: auto;
+}
+
+#dark-mode-btn,
+#light-mode-btn {
+    cursor: pointer;
+    padding-left: 10px;
+    background: none;
+    border: none;
+}
+
+/* === END NAVIGATION === */
+
+/* Just like job-keys from format.css */
+#section-keys {
+    position: fixed;
+    top: var(--main-offset-top);
+    width: max-content; /* fit to job names */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    min-width: var(--case-nav-width);
+}
+
+/* Same styling as job-keys buttons from style.css */
+button.case-section {
+    padding: 15px;
+}
+
+button.case-section:hover,
+button.case-section:active,
+button.case-section:focus {
+    cursor: pointer;
+}
+
+/* Just like job-results from format.css */
+#section-container {
+    display: flex;
+    flex-direction: column;
+    /* position case container to always be against right wall of main */
+    /* but offset the left side from the navigation of case sections */
+    position: relative;
+    right: 0px;
+    width: 100%;
+    padding-left: var(--case-offset-left);
+    min-width: var(--case-min-width);
+}
+
+main {
+    display: flex;
+    margin-left: var(--main-offset-edges);
+    margin-right: var(--main-offset-edges);
+    margin-top: var(--main-offset-top);
+    min-height: var(--main-min-height);
+}
+
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 10;        /* most front of all items */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: var(--nav-height);
+    z-index: 15;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    min-width: 70px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+:root {
+    --case-nav-width: 160px;
+    --case-offset-left: 250px;
+    --main-offset-top: 150px;
+    --main-offset-edges: 80px;
+    --main-min-height: 500px;
+    --case-min-width: 200px;
+    --nav-height: 100px;
+}

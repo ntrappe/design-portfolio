@@ -1,0 +1,123 @@
+/**
+ * The aesthetic css with only colors, fonts, etc.
+ */
+
+ @import "./case-study-format.css";
+
+ li.nav-item a {
+    text-decoration: none;
+    color: var(--lavender);
+    font-family: var(--font-mono);
+    font-size: var(--text-small);
+}
+
+/* style of nav text and email on hover */
+li.nav-item a:hover {
+    text-decoration: none;
+    color: var(--mint);
+}
+
+/* colorscheme icon in dark mode */
+#light-mode-btn {
+    fill: var(--lavender);
+}
+
+#light-mode-btn:hover {
+    fill: var(--mint);
+}
+
+ /* Same styling as job-keys buttons from style.css */
+button.case-section {
+    border: none;
+    border-left: 2px solid var(--lightest-navy);
+    background-color: transparent;
+    font-family: var(--font-mono);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+button.case-section[state="off"]:hover {
+    color: var(--mint);
+    background-color: var(--light-navy);
+}
+
+button.case-section[state="off"] {
+    color: var(--slate);
+    background-color: transparent;
+}
+
+button.case-section[state="on"] {
+    color: var(--mint);
+    border-color: var(--mint);
+    background-color: var(--light-navy);
+}
+
+header {
+    background-color: var(--navy-layer);
+}
+
+body {
+    background-color: var(--navy);
+    color: var(--slate);
+    font-family: var(--font-sans);
+}
+
+h2 {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    line-height: 1.3; 
+    font-size: 22px;
+    color: var(--lavender);
+}
+
+h4 {
+    font-family: var(--font-mono);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+footer h4 {
+    font-size: 13px;
+}
+
+p {
+    font-family: var(--font-sans);
+    font-size: 17px;
+    color: var(--slate);
+    font-weight: 400;
+    margin: 0px 0px 15px;
+    line-height: 1.5em;
+}
+
+b {
+    color: var(--bright-mint);
+}
+
+/* define color palette, fonts, & dimensions */
+:root {
+    --lavender: #ccd6f6;
+    --midnight: #020c1b;
+    --navy-layer: rgba(10,25,47,0.85);
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --mint: #3ec3ce;
+    --bright-mint: #85e9f2;
+    --lagoon: #9cd7ef;
+    --slate: #8892b0;
+    --stone: #a8b2d1;
+    --light-stone: #ccd6f6;
+    --glacier: #e6f1ff;
+    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-sans: 'Calibre', 'SF Pro Text', 'Inter', 'San Francisco', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --text-smallest: 12px;
+    --text-smaller: 13px;
+    --text-small: 14px;
+    --text-medium: 16px;
+    --text-large: 18px;
+    --text-big: 20px;
+    --text-bigger: 22px;
+    --text-biggest: 32px;
+    --border-radius: 6px;
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
