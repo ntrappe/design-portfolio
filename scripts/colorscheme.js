@@ -13,21 +13,21 @@ darkModeIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5
 function onload() {
     colorSchemeIconContainer.appendChild (lightModeIcon);
     /* set the base, index.html page to use dark style by default */
-    indexPageStyle.setAttribute ('href', '../styles/style.css');
+    indexPageStyle.setAttribute ('href', './styles/style.css');
 }
 
 /* if user clicks sun (light mode), switch to light css */
 lightModeIcon.addEventListener ('click', () => {
     colorSchemeIconContainer.removeChild (lightModeIcon);
     colorSchemeIconContainer.appendChild (darkModeIcon);
-    indexPageStyle.setAttribute ('href', '../styles/light.css');
+    indexPageStyle.setAttribute ('href', './styles/light.css');
 });
 
 /* if user clicks moon (dark mode), switch to dark css */
 darkModeIcon.addEventListener ('click', () => {
     colorSchemeIconContainer.removeChild (darkModeIcon);
     colorSchemeIconContainer.appendChild (lightModeIcon);
-    indexPageStyle.setAttribute ('href', '../styles/style.css');
+    indexPageStyle.setAttribute ('href', './styles/style.css');
 });
 
 onload();
