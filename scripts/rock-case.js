@@ -24,7 +24,12 @@ function displaySection() {
         sectionButtons[btnIdx].addEventListener ('click', () => {
             caseSectResult.removeChild (caseSectResult.firstElementChild);
             caseSectResult.appendChild (sectionsArr[btnIdx]);
-        });
+            // only have button pressed be active
+            for (let bIdx = 0; bIdx < NUM_SECTIONS; bIdx++) {
+                sectionButtons[bIdx].setAttribute ('state', 'off');
+            }
+            sectionButtons[btnIdx].setAttribute ('state', 'on');
+        }); 
     }
 }
 

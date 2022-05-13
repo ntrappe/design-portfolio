@@ -78,12 +78,47 @@ button.case-section:focus {
     min-width: var(--case-min-width);
 }
 
+/* in about section, containers for list of personal skills */
+ul,
+ol {
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* list styles */
+section ul li,
+section ol li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* within a section, count each occurence of an li */
+section li::before {
+    counter-increment: item 1;
+    content: "Step " counter(item) ". ";
+}
+
+/* images within the section */
+section img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 main {
     display: flex;
     margin-left: var(--main-offset-edges);
     margin-right: var(--main-offset-edges);
     margin-top: var(--main-offset-top);
     min-height: var(--main-min-height);
+}
+
+/* every time enter into section, reset the item counter */
+section {
+    counter-reset: item 0;
 }
 
 nav {

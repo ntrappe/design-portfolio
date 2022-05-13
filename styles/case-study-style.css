@@ -52,6 +52,18 @@ button.case-section[state="on"] {
     background-color: var(--light-navy);
 }
 
+ul li,
+ol li {
+    font-family: var(--font-mono);
+    color: var(--slate);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+li::before {
+    color: var(--mint);
+}
+
 header {
     background-color: var(--navy-layer);
 }
