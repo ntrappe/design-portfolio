@@ -1,0 +1,37 @@
+#dark-mode-btn svg,
+#light-mode-btn svg {
+    width: 20px;
+    height: auto;
+}
+
+#dark-mode-btn,
+#light-mode-btn {
+    cursor: pointer;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    margin-top: 0px;
+}
+
+#light-mode-btn {
+    fill: var(--lavender);
+}
+
+#light-mode-btn:hover {
+    fill: var(--mint);
+}
+
+#dark-mode-btn {
+    fill: var(--ash);
+}
+
+#dark-mode-btn:hover {
+    fill: var(--cobalt);
+}
+
+:root {
+    --lavender: #ccd6f6;
+    --mint: #3ec3ce;
+    --cobalt: #3C78d9;
+    --ash: #707680;
+}

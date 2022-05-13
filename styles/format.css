@@ -102,21 +102,6 @@ li.nav-item a::before {
     content: "0" counter(item) ". ";
 }
 
-#dark-mode-btn svg,
-#light-mode-btn svg {
-    width: 20px;
-    height: auto;
-}
-
-#dark-mode-btn,
-#light-mode-btn {
-    cursor: pointer;
-    padding-left: 10px;
-    background: none;
-    border: none;
-    margin-top: 0px;
-}
-
 /*====== MAIN ======*/
 #title-section p {
     max-width: 540px; 

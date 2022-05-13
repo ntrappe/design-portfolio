@@ -11,15 +11,10 @@ const job1 = document.createElement ('section');
 const job2 = document.createElement ('section');
 const job3 = document.createElement ('section');
 
-/* case studies */
-const pomoCaseStudy = document.getElementById ('pomo-case-study');
-const rockCaseStudy = document.getElementById ('rock-case-study');
-
 /* social links */
 const linkColItems = document.getElementById ('link-col-items');
 const gitHubIcon = document.getElementById ('github-icon');
 const iconArr = document.getElementsByClassName ('icon');
-
 
 function onload() {
     microsoftBtn.setAttribute ('state', 'on');
@@ -42,17 +37,6 @@ for (const icon of iconArr) {
         }, 1000);
     });
 }
-
-/* if user clicks image of case study, will navigate
- * to that home page */
-pomoCaseStudy.addEventListener ('click', () => {
-    location.replace ('https://ntrappe.github.io/design-portfolio/pomo')
-});
-
-rockCaseStudy.addEventListener ('click', () => {
-    location.replace ('https://ntrappe.github.io/design-portfolio/rock')
-});
-
 
 microsoftBtn.addEventListener ('click', () => {
     console.log ('show microsoft');

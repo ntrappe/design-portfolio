@@ -1,6 +1,8 @@
 const colorSchemeIconContainer = document.getElementById ('color-scheme');
 const lightModeIcon = document.createElement ('button');
 const darkModeIcon = document.createElement ('button');
+const indexPageStyle = document.getElementById ('base-style');
+
 lightModeIcon.setAttribute ('id', 'light-mode-btn');
 lightModeIcon.setAttribute ('aria-label', 'Switch to Light Mode');
 darkModeIcon.setAttribute ('id', 'dark-mode-btn');
@@ -10,19 +12,22 @@ darkModeIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5
 
 function onload() {
     colorSchemeIconContainer.appendChild (lightModeIcon);
-    styleSheet.setAttribute ('href', './style.css');
+    /* set the base, index.html page to use dark style by default */
+    indexPageStyle.setAttribute ('href', '../styles/style.css');
 }
 
+/* if user clicks sun (light mode), switch to light css */
 lightModeIcon.addEventListener ('click', () => {
     colorSchemeIconContainer.removeChild (lightModeIcon);
     colorSchemeIconContainer.appendChild (darkModeIcon);
-    styleSheet.setAttribute ('href', './light.css');
+    indexPageStyle.setAttribute ('href', '../styles/light.css');
 });
 
+/* if user clicks moon (dark mode), switch to dark css */
 darkModeIcon.addEventListener ('click', () => {
     colorSchemeIconContainer.removeChild (darkModeIcon);
     colorSchemeIconContainer.appendChild (lightModeIcon);
-    styleSheet.setAttribute ('href', './style.css');
+    indexPageStyle.setAttribute ('href', '../styles/style.css');
 });
 
 onload();

@@ -2,7 +2,7 @@
  * The aesthetic css with only colors, fonts, etc.
  */
 
- @import "./case-study-format.css";
+@import "./case-study-format.css";
 
  li.nav-item a {
     text-decoration: none;
@@ -86,7 +86,7 @@ p {
     color: var(--slate);
     font-weight: 400;
     margin: 0px 0px 15px;
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 
 b {

@@ -1,6 +1,6 @@
 /**
-* The aesthetic css with only colors, fonts, etc.
-*/
+ * The aesthetic css with only colors, fonts, etc.
+ */
 
 @import "./format.css";
 @import "./configure.css";
@@ -8,18 +8,16 @@
 /*====== NAVIGATION/HEADER ======*/
 li.nav-item a {
     text-decoration: none;
-    color: var(--soft-grey);
+    color: var(--lavender);
     font-family: var(--font-mono);
     font-size: var(--text-small);
-    font-weight: 400;
 }
 
 /* style of nav text and email on hover */
 li.nav-item a:hover,
 #email-container a:hover {
     text-decoration: none;
-    color: var(--cobalt);
-    font-weight: 500;
+    color: var(--mint);
 }
 
 /*====== COLUMNS OUTSIDE OF MAIN ======*/
@@ -31,7 +29,7 @@ li.nav-item a:hover,
 
 #link-col-items li {
     padding: 10px;
-    /* color: var(--ash); */
+    color: var(--slate);
 }
 
 #email-container a {
@@ -39,8 +37,7 @@ li.nav-item a:hover,
     line-height: 18px;
     font-family: var(--font-mono);
     font-size: var(--text-smaller);
-    font-weight: 500;
-    color: var(--soft-grey);
+    color: var(--stone);
     letter-spacing: 0.1em;
 }
 
@@ -51,66 +48,57 @@ li.nav-item a:hover,
     width: 1.5px;
     height: 150px;
     margin: 0px auto;
-    background-color: var(--line-color);
-}
-
-#dark-mode-btn {
-    fill: var(--ash);
-}
-
-#dark-mode-btn:hover {
-    fill: var(--cobalt);
+    background-color: #a8b2d1;
 }
 
 /*====== SECTIONS IN MAIN ======*/
 h2.numbered-heading::before {
-    color: var(--cobalt);
+    color: var(--mint);
     font-family: var(--font-mono);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
 }
 
 h2.numbered-heading::after {
-    background-color: var(--light-grey);
-    height: 1.5px;
+    background-color: var(--lightest-navy);
 }
 
 .nav-item a::before,
 li::before {
-    color: var(--cobalt);
+    color: var(--mint);
 }
 
 #skill-list li,
 #tech-list li,
 ul.project-tools li {
     font-family: var(--font-mono);
-    /* color: var(--med-grey); */
-    font-weight: 400;
+    color: var(--slate);
+    font-weight: 300;
     font-size: 14px;
 }
 
 #skill-list li::before,
 #tech-list li::before {
-    color: var(--cobalt);
+    color: var(--mint);
 }
 
 span.company {
-    color: var(--cobalt);
+    color: var(--mint);
 }
 
 p.range {
     font-family: var(--font-mono);
-    color: var(--ash);
+    color: var(--stone);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 button.job {
     border: none;
-    border-left: 2px solid var(--line-color);
+    border-left: 2px solid var(--lightest-navy);
     background-color: transparent;
     font-family: var(--font-mono);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 13px;
     /* letter-spacing: 0.1em; */
 }
@@ -122,38 +110,32 @@ button.job:focus {
 }
 
 button.job[state="off"]:hover {
-    color: var(--cobalt);
-    background-color: var(--highlight-grey);
+    color: var(--mint);
+    background-color: var(--light-navy);
 }
 
 button.job[state="off"] {
-    color: var(--ash);
-    background-color: var(--hint-grey);
+    color: var(--slate);
+    background-color: transparent;
 }
 
 button.job[state="on"] {
-    color: var(--cobalt);
-    border-color: var(--cobalt);
-    background-color: var(--background-grey);
+    color: var(--mint);
+    border-color: var(--mint);
+    background-color: var(--light-navy);
 }
 
 div.project-image,
 p.project-description {
-    box-shadow: 0px 10px 30px -10px rgba(2,12,27,0.2);
+    box-shadow: 0px 10px 30px -10px rgba(2,12,27,0.7);
 }
 
 div.project-image img {
-    opacity: 0.8;
-}
-
-div.project-image img:hover {
-   opacity: 1;
+    opacity: 0.4;
 }
 
 h4.project-tag {
-    /* color: var(--soft-grey); */
-    color: var(--cobalt);
-    font-weight: 500;
+    color: var(--mint);
 }
 
 h3.project-title {
@@ -162,11 +144,10 @@ h3.project-title {
 }
 
 p.project-description {
-    background-color: var(--highlight-grey);
+    background-color: var(--light-navy);
     border-radius: var(--border-radius);
-    border: 1.5px solid var(--background-grey);
     font-size: 14px;
-    color: var(--text);
+    color: var(--stone);
     font-weight: 400;
 }
 
@@ -180,21 +161,21 @@ a.inline-link {
 }
 
 a.inline-link::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 1px;
-    position: relative;
-    bottom: 0.2em;
-    background-color: var(--line-color);
-    transition: var(--transition);
-    opacity: 0.5;
+	content: "";
+	display: block;
+	width: 0px;
+	height: 1px;
+	position: relative;
+	bottom: 0.2em;
+	background-color: var(--mint);
+	transition: var(--transition);
+	opacity: 0.5;
 }
 
 a.inline-link:hover::after, 
 a.inline-link:focus::after, 
 a.inline-link:active::after {
-    width: 100%;
+	width: 100%;
 }
 
 img.icon {
@@ -202,22 +183,22 @@ img.icon {
 }
 
 header {
-    background-color: var(--white-layer);
+    background-color: var(--navy-layer);
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--navy);
     color: var(--slate);
     font-family: var(--font-sans);
 }
 
 h1:first-of-type {
-    color: var(--soft-grey);
+    color: var(--light-stone);
 }
 
 h1 {
     margin-top: 10px;
-    color: var(--softest-grey);
+    color: var(--slate);
     line-height: 0.9;
     font-size: clamp(40px, 8vw, 80px);
     font-weight: 800;
@@ -225,24 +206,23 @@ h1 {
 
 h2 {
     font-family: var(--font-sans);
-    color: var(--soft-grey);
+    color: var(--light-stone);
     font-size: 29px;
 }
 
 h3 {
-font-family: var(--font-sans);
-font-weight: 500;
-line-height: 1.3; 
-font-size: 18px;
-color: var(--dark-grey);
-margin-bottom: 2px;
+   font-family: var(--font-sans);
+   font-weight: 500;
+   line-height: 1.3; 
+   font-size: 18px;
+   color: var(--lavender);
+   margin-bottom: 2px;
 }
 
 h4 {
     font-family: var(--font-mono);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 15px;
-    color: var(--softest-grey);
 }
 
 footer h4 {
@@ -252,18 +232,18 @@ footer h4 {
 p {
     font-family: var(--font-sans);
     font-size: 17px;
-    color: var(--text);
+    color: var(--slate);
     font-weight: 400;
     margin: 0px 0px 15px;
 }
 
 b {
-    color: var(--bright-cobalt);
+    color: var(--bright-mint);
 }
 
 li {
     font-size: 15px;
-    color: var(--ash);
+    color: var(--slate);
     font-weight: 400;
 }
 
@@ -275,19 +255,17 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --lavender: #ccd6f6;
     --midnight: #020c1b;
-    --white-layer: rgba(255, 255, 255, 0.85);
-    --white: #ffffff;
-    --cobalt: #3C78d9;
-    --bright-cobalt: #7694d9;
-    --text: #596069;
-    --background-grey: #eaeef2;
-    --highlight-grey: #f5f6f8;
-    --hint-grey: #fafbfc;
-    --ash: #707680;
-    --soft-grey: #848a92;
-    --softest-grey: #b7bcc1;
-    --light-grey: #e1e4e9;
-    --line-color: #d1d7de;
+    --navy-layer: rgba(10,25,47,0.85);
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --mint: #3ec3ce;
+    --bright-mint: #85e9f2;
+    --lagoon: #9cd7ef;
+    --slate: #8892b0;
+    --stone: #a8b2d1;
+    --light-stone: #ccd6f6;
+    --glacier: #e6f1ff;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     --font-sans: 'Calibre', 'SF Pro Text', 'Inter', 'San Francisco', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
     --text-smallest: 12px;
