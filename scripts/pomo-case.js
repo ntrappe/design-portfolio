@@ -85,7 +85,11 @@ function init() {
     `;
 
     (sectionsArr[6]).innerHTML = `
-        <h2>Results</h2>
+        <h2>Result</h2>
+        <iframe src="https://cse110team33.netlify.app/" title="Interactive Timer"></iframe>
+        <p>Enjoy this interactive app. It may take a minute to load. If it does 
+        not load within 5 minutes, please navigate here: 
+        <a href="https://cse110team33.netlify.app/">cse110team33.netlify.app</a>.
     `;
 
     caseSectResult.appendChild (sectionsArr[0]);

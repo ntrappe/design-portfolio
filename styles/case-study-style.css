@@ -105,6 +105,12 @@ b {
     color: var(--bright-mint);
 }
 
+a {
+    font-family: var(--font-mono);
+    font-size: 17px;
+    color: var(--lavender);
+}
+
 /* define color palette, fonts, & dimensions */
 :root {
     --lavender: #ccd6f6;

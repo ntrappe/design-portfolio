@@ -108,6 +108,17 @@ section img {
     margin-bottom: 50px;
 }
 
+/* iframe for interactive prototype in section */
+section iframe {
+    width: 100%;
+    height: auto;
+    min-width: 600px;
+    min-height: 700px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 main {
     display: flex;
     margin-left: var(--main-offset-edges);
@@ -151,6 +162,7 @@ footer {
     align-items: center;
     text-align: center;
     padding: 15px;
+    margin-top: 50px;
 }
 
 :root {
