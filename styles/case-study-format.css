@@ -106,9 +106,13 @@ section ol li::before {
 }
 
 /* within a section, count each occurence of an li */
-section ul li::before {
+section ul.link-list li::before {
     counter-increment: item 1;
     content: "🔗 ";
+}
+
+section ul li::before {
+    content: "▶︎ ";
 }
 
 /* images within the section */
@@ -182,6 +186,6 @@ footer {
     --main-offset-top: 150px;
     --main-offset-edges: 80px;
     --main-min-height: 500px;
-    --case-min-width: 200px;
+    --case-min-width: 150px;
     --nav-height: 100px;
 }

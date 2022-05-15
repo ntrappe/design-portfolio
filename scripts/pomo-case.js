@@ -77,7 +77,7 @@ function init() {
     (sectionsArr[2]).innerHTML = `
         <h2>Research</h2>
         <p>To conduct market research, we sampled six different pomodoro timers:
-        <ul>
+        <ul class="link-list">
             <li><a href="https://tomato-timer.com/">TomatoTimer</a></li>
             <li><a href="https://pomofocus.io/">PomoFocus</a></li>
             <li><a href="http://www.tomatotimers.com/">Tomato Timers</a></li>
@@ -108,9 +108,45 @@ function init() {
 
     (sectionsArr[5]).innerHTML = `
         <h2>Design</h2>
-        <img src="./media/pomo-timer/pomo_home.png" alt="TBD">
+        <p>For the design of our app, we knew that the single most important aspect was 
+        the timer. That would have to be prominent and viewable regardless of the browser 
+        window size or device. Similarly, we wanted the user to follow the pomodoro method 
+        so we included just one button that would toggle between <strong>Start</strong> 
+        and <strong>Reset</strong>. The pomodoro method doesn't allow you to pause the 
+        timer (it's not a successful pomodoro) so, while the timer is running, they are only 
+        allowed to restart it. </p>
+        <p>Given that our target audience consisted of young software engineers, we knew that 
+        the following customizations (located in <strong>Settings</strong>) would be necessary:
+        <ul>
+            <li>Customize length of a work session (defaults to 25 min)</li>
+            <li>Customize length of a short break (defaults to 5 min)</li>
+            <li>Customize length of a long break (defaults to 15 min)</li>
+            <li>Turn on calm mode if seconds are distracting</li>
+            <li>Turn on dark mode (common for devs)</li>
+            <li>Turn on accessibility to use keystrokes if precise clicking is hard</li>
+            <li>Use sounds to indicate the status of the timer (if away from the window and cannot visibly see changes)</li>
+        </ul>
+        </p>
+        <br/>
+        <img src="./media/pomo-timer/ADR_set.png" alt="TBD">
+        <p class="figure-title"><strong>Figure 1:</strong> highlights a few of the design decisions we made. You can 
+        see the full list and all the Architectural Design Decisions (ADRs) that were made 
+        <a href="https://github.com/ntrappe/cse110-w21-group33/wiki">here</a>.</p>
+        <br/>
+        <br/>
+        <p>For aesthetics, the purpose of the pomodoro technique is to minimize distractions and maximize 
+        productivity so we knew that a minimal interface was the only route to take. The timer is the most prominent 
+        feature and has the brightest text color.</p>
+        <img src="./media/pomo-timer/timer-home.png" alt="TBD">
+        <p>The mode (e.g. 'work', 'short break', 'long break') is shown above the timer with each different mode having 
+        a different color so the user can, at a quick glance, know what they should be doing. Right below the mode, there 
+        are 4 squares that represent the 4 pomodoros in a set (this is based on the technique). After each successful 
+        pomodoro, a square will be filled in with green.</p>
+        <iframe src="./media/pomo-timer/go_through_pomo_set.mov" title="Interactive Timer"></iframe>
+        <p>Settings:</p>
         <img src="./media/pomo-timer/pomo_settings.png" alt="TBD">
-
+        <p class="figure-title"><strong>Figure 2:</strong> settings with the customization options (like length of 
+        a work session, volume, and keyboard shortcuts).</p> 
     `;
 
     (sectionsArr[6]).innerHTML = `
