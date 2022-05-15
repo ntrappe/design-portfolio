@@ -76,6 +76,7 @@ function init() {
 
     (sectionsArr[2]).innerHTML = `
         <h2>Research</h2>
+        <p>[Work in Progress]</p>
         <p>To conduct market research, we sampled six different pomodoro timers:
         <ul class="link-list">
             <li><a href="https://tomato-timer.com/">TomatoTimer</a></li>
@@ -100,14 +101,17 @@ function init() {
 
     (sectionsArr[3]).innerHTML = `
         <h2>Insights</h2>
+        <p>[Work in Progress]</p>
     `;
 
     (sectionsArr[4]).innerHTML = `
         <h2>Concept Refinement</h2>
+        <p>[Work in Progress]</p>
     `;
 
     (sectionsArr[5]).innerHTML = `
         <h2>Design</h2>
+        <p>[Work in Progress]</p>
         <p>For the design of our app, we knew that the single most important aspect was 
         the timer. That would have to be prominent and viewable regardless of the browser 
         window size or device. Similarly, we wanted the user to follow the pomodoro method 
