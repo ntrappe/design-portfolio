@@ -4,15 +4,17 @@
 
 @import "./case-study-format.css";
 
- li.nav-item a {
+li.nav-item a {
     text-decoration: none;
-    color: var(--lavender);
     font-family: var(--font-mono);
     font-size: var(--text-small);
+    font-weight: 400;
 }
 
 /* style of nav text and email on hover */
-li.nav-item a:hover {
+li.nav-item a:hover,
+ a::before,
+li::before {
     text-decoration: none;
     color: var(--mint);
 }
@@ -60,10 +62,6 @@ ol li {
     font-size: 14px;
 }
 
-li::before {
-    color: var(--mint);
-}
-
 header {
     background-color: var(--navy-layer);
 }
@@ -105,10 +103,35 @@ b {
     color: var(--bright-mint);
 }
 
-a {
+strong {
+    color: var(--stone);
+    font-weight: 500;
+}
+
+li,
+a,
+p.figure-title {
     font-family: var(--font-mono);
-    font-size: 17px;
-    color: var(--lavender);
+    font-size: 16px;
+    color: var(--slate);
+    font-weight: 400;
+}
+
+p.figure-title {
+    font-size: 14px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+a {
+    font-size: 16px;
+    color: var(--stone);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
 }
 
 /* define color palette, fonts, & dimensions */

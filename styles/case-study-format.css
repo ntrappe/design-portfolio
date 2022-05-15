@@ -1,5 +1,3 @@
-
-
 /* === NAVIGATION === */
 #nav-items ol {
     display: flex;      /* makes nav items fill a row */
@@ -14,6 +12,12 @@ li.nav-item {
     list-style: none;
     margin: 0px 10px;
     padding-left: 5px; /* space between nav items */
+    counter-increment: item 1;
+}
+
+/* for each item in nav, increment counter and use num */
+li.nav-item a::before {
+    content: "0" counter(item) ". ";
 }
 
 /* set size of brain icon */
@@ -96,9 +100,15 @@ section ol li {
 }
 
 /* within a section, count each occurence of an li */
-section li::before {
+section ol li::before {
     counter-increment: item 1;
     content: "Step " counter(item) ". ";
+}
+
+/* within a section, count each occurence of an li */
+section ul li::before {
+    counter-increment: item 1;
+    content: "🔗 ";
 }
 
 /* images within the section */
@@ -140,6 +150,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 40px;
+    counter-reset: item 0;
 }
 
 header {

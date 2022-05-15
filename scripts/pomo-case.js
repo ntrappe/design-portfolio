@@ -66,10 +66,36 @@ function init() {
             <li>Return to Step 3.</li>
         </ol>
         </p>
+        <p>
+        In theory, the <b>Pomodoro Timer</b> <i>decreases</i> procrastination by focusing
+        on working for just some block of time. It <i>minimizes</i> distractions and will
+        force a user to re-start a pomodoro if interrupted. Finally, it <i>decreases</i> 
+        burnout by enforcing work and break times (and we often forget the importance 
+        of a break).
     `;
 
     (sectionsArr[2]).innerHTML = `
         <h2>Research</h2>
+        <p>To conduct market research, we sampled six different pomodoro timers:
+        <ul>
+            <li><a href="https://tomato-timer.com/">TomatoTimer</a></li>
+            <li><a href="https://pomofocus.io/">PomoFocus</a></li>
+            <li><a href="http://www.tomatotimers.com/">Tomato Timers</a></li>
+            <li><a href="https://pomodor.app/timer?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier">Pomodor</a></li>
+            <li><a href="https://www.marinaratimer.com/">Marinara Timer</a></li>
+            <li><a href="https://pomodoro-tracker.com/">Pomodoro Tracker</a></li>
+        </ul>
+        <br/>
+        <p>For each site, we did an analysis of the target market, features, pros/cons,
+        as well as design related elements like affordances, signifiers, feedback, and 
+        accessibility. <strong>Figures 1</strong> and <strong>2</strong> exemplify the original
+        app and the annotations made in our analysis. This is similar to how the other apps 
+        were critiqued.</p>
+        <img src="./media/pomo-timer/pomofocus_app.png" alt="TBD">
+        <p class="figure-title"><strong>Figure 1: </strong>Pomofocus app.</p>
+        <br/>
+        <img src="./media/pomo-timer/pomofocus_annotated.png" alt="TBD">
+        <p class="figure-title"><strong>Figure 2: </strong>Annotated app with pros/cons in dark grey boxes.</p>
     `;
 
     (sectionsArr[3]).innerHTML = `
@@ -82,6 +108,9 @@ function init() {
 
     (sectionsArr[5]).innerHTML = `
         <h2>Design</h2>
+        <img src="./media/pomo-timer/pomo_home.png" alt="TBD">
+        <img src="./media/pomo-timer/pomo_settings.png" alt="TBD">
+
     `;
 
     (sectionsArr[6]).innerHTML = `
