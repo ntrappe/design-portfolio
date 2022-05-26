@@ -69,6 +69,25 @@ function init() {
 
     (sectionsArr[2]).innerHTML = `
         <h2>Research</h2>
+        <p>Our research consisted of both interviewing the backgrounds and experiences of both 
+        novice millennials and park rangers as well as an analysis of competitors on the market.</p>
+        <img src="./media/rock/racial_stats.png" alt="50+ millennials and 10+ park surveyed">
+        <p>We saw two distinct divides in the target population across 10 competitive apps. The apps 
+        developed by the park service or government were all geared towards families and older 
+        persons (35+). Apps revolving around planning (e.g. HipCamp, Wanderlog) focused on younger 
+        persons (18-35). The review sites (Yelp, TripAdvisor) could aim for a broad population but the 
+        majority of reviews are older (35+). Apps that provide detailed information (AllTrails, NPS, CA Gov) 
+        all assume users have previous knowledge of hiking as they use hiking/camping jargon, have very 
+        detailed pieces of information, and may have offline functions (assuming long backpacking trips). 
+        On the other hand, general search (Google Search, Apple Maps) or planning apps cater to novices 
+        who are not expected to be at all familiar with hiking or national parks.</p>
+        <p>We want to target novice hikers who do not know what they do not know and are overwhelmed 
+        by the planning process. We want to inform without assuming background knowledge (what the NPS, 
+        CA Gov, AllTrails fail to do) but also provide planning help. There is also a lack of searching 
+        and filtering abilities. Our app can fill this gap by allowing users to specify their needs 
+        (e.g. cost, difficulty, equipment) and then find the best matches. This will offload much of the work 
+        on behalf of the user.</p>
+        <img src="./media/rock/rock_market_research.png" alt="https://docs.google.com/document/d/1eKqaEfm-ZcYMHUdmKS3_RhwLTFxx08vJjQCDKVrxwAA/edit">
     `;
 
     (sectionsArr[3]).innerHTML = `
