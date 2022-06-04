@@ -5,6 +5,7 @@ const NUM_SECTIONS = 7;
 const caseSectKeys   = document.getElementById ('section-keys');
 const caseSectResult = document.getElementById ('section-container');
 const sectionButtons = document.getElementsByClassName ('case-section');
+const colorIcon = document.getElementById('color-scheme');
 
 /* Create the individual sections that'll belong to caseSectResult */
 const sectionsArr = []
@@ -61,6 +62,11 @@ function init() {
         The NPS depends on park visitation to fund the maintencance and access to these 
         natural wonders. With a dwindling audience, the NPS needs to find a way to attract 
         millennials and keep the national park system alive.</p>
+        <br/>
+        <p class="quote">"If we were a business and [millennials] were our clientele, then 
+        over the long term, we would probably be out of business."</p>
+        <p class="author">Johnathan Jarvis, NPS Director</p>
+        <br/>
         <p>To address this problem, we found that the biggest obstacles were transportation, 
         amount of free time, and awareness. We can't physically provide transportation nor change 
         the amount of time millennials have. However, we can address the issue of 

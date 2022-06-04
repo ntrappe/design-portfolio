@@ -212,7 +212,9 @@ li.nav-item a::before {
 }
 
 /* bullet point for notes on that job */
-#job-results li::before {
+#job-results li::before,
+#skill-list li::before,
+#tech-list li::before {
     content: "▶︎";
     left: 0px;
     position: absolute;
